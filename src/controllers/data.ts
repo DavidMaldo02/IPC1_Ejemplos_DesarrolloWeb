@@ -1,0 +1,97 @@
+import { Customer } from "../types";
+
+export var testData: number[] = [1, 2, 3, 4, 5];
+
+export var customers: Customer[] = [
+  {
+    "id": 0,
+    "firstName": "Maurizio",
+    "lastName": "Backhouse",
+    "email": "mbackhouse0@tripod.com",
+    "creditCard": "201853177529418"
+  }, {
+    "id": 2,
+    "firstName": "Lettie",
+    "lastName": "Coch",
+    "email": "lcoch1@elpais.com",
+    "creditCard": "5048370338277239"
+  }, {
+    "id": 3,
+    "firstName": "Davita",
+    "lastName": "Brooker",
+    "email": "dbrooker2@privacy.gov.au",
+    "creditCard": "4844189444757622"
+  }, {
+    "id": 4,
+    "firstName": "Ricoriki",
+    "lastName": "Aiston",
+    "email": "raiston3@dedecms.com",
+    "creditCard": "5002359817851527"
+  }, {
+    "id": 5,
+    "firstName": "Layne",
+    "lastName": "Stubbe",
+    "email": "lstubbe4@wsj.com",
+    "creditCard": "30218124448962"
+  }, {
+    "id": 6,
+    "firstName": "Ranna",
+    "lastName": "Morales",
+    "email": "rmorales5@marriott.com",
+    "creditCard": "3568293043527356"
+  }, {
+    "id": 7,
+    "firstName": "Fionna",
+    "lastName": "Olliff",
+    "email": "folliff6@auda.org.au",
+    "creditCard": "3584733305114831"
+  }, {
+    "id": 8,
+    "firstName": "Florida",
+    "lastName": "Andrich",
+    "email": "fandrich7@flavors.me",
+    "creditCard": "201526578313307"
+  }, {
+    "id": 9,
+    "firstName": "Terra",
+    "lastName": "Cribbin",
+    "email": "tcribbin8@illinois.edu",
+    "creditCard": "4041594088354837"
+  }, {
+    "id": 10,
+    "firstName": "Virginia",
+    "lastName": "Athridge",
+    "email": "vathridge9@oaic.gov.au",
+    "creditCard": "3550980328404109"
+  }, {
+    "id": 11,
+    "firstName": "Sydel",
+    "lastName": "Enrigo",
+    "email": "senrigoa@nih.gov",
+    "creditCard": "201501882181708"
+  }, {
+    "id": 12,
+    "firstName": "Noll",
+    "lastName": "Dimanche",
+    "email": "ndimancheb@newyorker.com",
+    "creditCard": "4041371135245"
+  }, {
+    "id": 13,
+    "firstName": "Antonietta",
+    "lastName": "Coppins",
+    "email": "acoppinsc@elpais.com",
+    "creditCard": "675966887755248094"
+  }, {
+    "id": 14,
+    "firstName": "Lizette",
+    "lastName": "Siberry",
+    "email": "lsiberryd@yale.edu",
+    "creditCard": "5458191928884561"
+  }, {
+    "id": 15,
+    "firstName": "Garfield",
+    "lastName": "Alabastar",
+    "email": "galabastare@typepad.com",
+    "creditCard": "3573024181578718"
+  }
+]
