@@ -1,0 +1,49 @@
+:root {
+  --background: #1d1d1d;
+  --text: #e2f1e7;
+  --primary: #629584;
+  --secondary: #243642;
+  --accent: #387478;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  background: var(--background);
+  color: var(--text);
+  width: 100dvw;
+  height: 100dvh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 32px;
+  margin: 64px 128px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: var(--primary);
+  letter-spacing: 1px;
+  padding: 16px 32px;
+  text-align: left;
+  border: var(--text) solid 2px;
+}
+
+td {
+  background: var(--background);
+  padding: 16px 32px;
+  border: var(--text) solid 2px;
+}
