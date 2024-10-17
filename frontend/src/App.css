@@ -1,0 +1,83 @@
+button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font: "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+button.primary {
+  background: transparent;
+  border: var(--primary) solid 2px;
+  color: var(--text);
+}
+
+button.secondary {
+  background: transparent;
+  border: var(--secondary) solid 2px;
+  color: var(--text);
+}
+
+button.accent {
+  background: transparent;
+  border: var(--accent) solid 2px;
+  color: var(--text);
+}
+
+button.primary:hover {
+  background: var(--primary);
+  color: var(--background);
+}
+
+button.secondary:hover {
+  background: var(--secondary);
+  color: var(--background);
+}
+
+button.accent:hover {
+  background: var(--accent);
+  color: var(--background);
+}
+
+.file-button {
+  background-color: var(--primary);
+  color: var(--background);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.file-button:hover {
+  background-color: var(--accent);
+}
+
+.link {
+  color: var(--text);
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: var(--background);
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
