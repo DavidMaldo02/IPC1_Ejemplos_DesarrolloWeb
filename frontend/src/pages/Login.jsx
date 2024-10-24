@@ -21,7 +21,7 @@ export default function Login() {
         body: JSON.stringify(data)
       })
       const result = await response.json()
-      if (result) {
+      if (response.ok) {
         localStorage.setItem('user', JSON.stringify(result))
         navigate('/protected')
       } else {

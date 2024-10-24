@@ -6,6 +6,7 @@ import "./App.css";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import EditClient from "./pages/EditClient";
+import Protected from "./pages/Protected";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
       { path: "/login", element: <Login /> },
       { path: "/register", element: <Register /> },
       { path: "/clientes/:id", element: <EditClient /> },
+      { path: "/protected", element: <Protected />}
     ],
   },
 ]);
