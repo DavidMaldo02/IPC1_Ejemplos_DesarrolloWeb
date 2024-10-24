@@ -42,3 +42,12 @@ export const deleteCustomer = (id: number) => {
   if (index === -1) throw new Error('Customer not found');
   customers.splice(index, 1);
 }
+
+export const groupCreditCardsByLength = () => {
+    const creditCardLengths = customers.map(c => c.creditCard.length);
+    const creditCardLengthsCount = creditCardLengths.reduce((acc, length) => {
+        acc[length] = (acc[length] || 0) + 1;
+        return acc;
+    }, {} as {[key: number]: number})
+    return creditCardLengthsCount;
+}

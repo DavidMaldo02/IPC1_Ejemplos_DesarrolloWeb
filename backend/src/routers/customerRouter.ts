@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { createCustomer, createCustomers, deleteCustomer, getCustomer, getCustomers, updateCustomer } from '../controllers/customerController';
+import { createCustomer, createCustomers, deleteCustomer, getCustomer, getCustomers, groupCreditCardsByLength, updateCustomer } from '../controllers/customerController';
 import { Customer, CustomerEntry } from '../types';
 
 
@@ -9,7 +9,7 @@ customerRouter.get('/', (req, res) => {
   res.send(getCustomers());
 });
 
-customerRouter.get('/:id', (req, res) => {
+customerRouter.get('/get/:id', (req, res) => {
   const id = parseInt(req.params.id);
   const customer = getCustomer(id);
   if (!customer) {
@@ -58,5 +58,8 @@ customerRouter.delete('/delete/:id', (req, res) => {
     res.status(400).send({ message: 'Error deleting customer' });
   }
 });
-
+customerRouter.get('/reports', (req, res) => {
+  const content = groupCreditCardsByLength();
+  res.status(200).send(content)
+})
 export default customerRouter;
